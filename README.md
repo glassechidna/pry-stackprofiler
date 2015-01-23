@@ -19,14 +19,14 @@ variable or in `~/.pryrc`.
 
 ```ruby
 # ~/.pryrc
-Pry.config.pry_stackprofiler_ui_url = "http://localhost:9292/receive"
+Pry.config.pry_stackprofiler_ui_url = "http://localhost:9260/receive"
 ```
 
 or
 
 ```bash
 # ~/.bashrc
-export PRY_STACKPROFILER_UI_URL=http://localhost:9292/receive
+export PRY_STACKPROFILER_UI_URL=http://localhost:9260/receive
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ In another tab, start up a Pry session:
     [1] pry(main)*   sleep 0.1
     [1] pry(main)* end
 
-Now navigate to Stackprofiler (probably at [http://localhost:9292/][3])
+Now navigate to Stackprofiler (probably at [http://localhost:9260/][3])
 and see which lines were slowest!
 
 You can pass an options hash to `Pry::profile` if desired. The most useful key is `interval`
@@ -60,4 +60,4 @@ and specifies how often the code should be sampled in microseconds. The default 
 
 [1]: https://github.com/glassechidna/stackprofiler
 [2]: https://github.com/pry/pry
-[3]: http://localhost:9292/
+[3]: http://localhost:9260/
