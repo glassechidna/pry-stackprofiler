@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'pry-stackprofiler'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ['Aidan Steele']
   spec.email         = ['aidan.steele@glassechidna.com.au']
   spec.summary       = %q{A pry plugin to facilitate easy benchmarking of Ruby code.}
