@@ -1,5 +1,5 @@
 require 'net/http'
-require 'stackprof'
+require 'stackprofx'
 
 module PryStackprofiler
   class << self
@@ -10,7 +10,7 @@ module PryStackprofiler
     def profile opts={}, &blk
       # todo: pass through options perhaps?
       opts.merge!({mode: :wall, raw: true})
-      @last_profile = StackProf.run(opts) { blk.call }
+      @last_profile = StackProfx.run(opts) { blk.call }
       @blk_obj_id = RubyVM::InstructionSequence::of(blk).object_id
       @needs_send = true
     end
